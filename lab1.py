@@ -8,15 +8,27 @@ Original file is located at
 """
 
 import random
-
-for i in range(0,201):
+import matplotlib.pyplot as plt
+import numpy as np
+Tlist = []
+count = 0
+for i in range(1,202):
     random.seed(i)
     num = random.randint(1000000, 9999999)
-    print(num)
+#    print(num)
     lastTwo = num%100
     a= lastTwo//10
 #    print("a",a)
     b = lastTwo%10
 #    print("b",b)
     if a == b:
-       print("seed =",i ,"has equal last two number")
+       count = count+1
+       Tlist.append(i)
+       print("Seed =",i ,", Random Number =",num,"has equal last two number")
+y = np.arange(count) 
+plt.scatter(Tlist, y)
+plt.title("Scatter Plot Of times")
+plt.xlabel('Seeds')
+plt.ylabel('Times')
+ 
+plt.show()
