@@ -18,10 +18,11 @@ import csv
 
 data = pd.read_csv('Monthly_agv_p.csv')
 data.plot(figsize=(10, 8))
+plt.xlim(0,400)
 plt.legend(loc="upper left")
 
 data = pd.read_csv('Monthly_agv_p.csv')
-data.hist(figsize=(15, 10))
+data.hist(range=[0, 250],figsize=(15, 10))
 
 data = pd.read_csv('Tick_Data.csv')
 data.hist(figsize=(10, 10))
