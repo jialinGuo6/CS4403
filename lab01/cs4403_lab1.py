@@ -29,26 +29,21 @@ for i in range(1,202):       #  repeat 200 times
       Klist.append(k)
       LTwoList = []
       k=0
-
-
+print('which seed happen repeat',seedList)
 print('Klist',Klist)
 print('average number of iterations required before a collision: ', cCountSum/len(Klist))
 plt.subplot(1, 2, 1)
 plt.scatter(seedList,Klist)
 plt.title("Scatter k Of happen")
-plt.xlabel('Seeds')
+plt.xlabel('which seed happen repeat')
 plt.ylabel('k')
 
 plt.subplot(1, 2, 2)
 plt.plot(Klist)
 plt.title("k Of happen")
-plt.ylabel('k')
+plt.xlabel('How many k')
 plt.show()
 
-import random
-import matplotlib.pyplot as plt
-import time 
-import numpy as np
 seedList = []
 LTwoList = []
 Klist = []
@@ -69,24 +64,21 @@ for i in range(1,202):       #  repeat 200 times
       k=0
 
 
+print('which seed happen repeat',seedList)
 print('Klist',Klist)
 print('average number of iterations required before a collision: ', cCountSum/len(Klist))
 plt.subplot(1, 2, 1)
 plt.scatter(seedList,Klist)
 plt.title("Scatter k Of happen")
-plt.xlabel('Seeds')
+plt.xlabel('which seed happen repeat')
 plt.ylabel('k')
 
 plt.subplot(1, 2, 2)
 plt.plot(Klist)
 plt.title("k Of happen")
-plt.ylabel('k')
+plt.xlabel('How many k')
 plt.show()
 
-import random
-import matplotlib.pyplot as plt
-import time 
-import numpy as np
 seedList = []
 LTwoList = []
 Klist = []
@@ -107,10 +99,11 @@ for i in range(1,202):       #  repeat 200 times
       k=0
 
 
+print('which seed happen repeat',seedList)
 print('Klist',Klist)
 print('average number of iterations required before a collision: ', cCountSum/len(Klist))
 plt.subplot(1, 2, 1)
 plt.scatter(seedList,Klist)
 plt.title("Scatter k Of happen")
-plt.xlabel('Seeds')
+plt.xlabel('which seed happen repeat')
 plt.ylabel('k')
